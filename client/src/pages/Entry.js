@@ -2,7 +2,7 @@ import '../styles/Entry.css';
 
 function Entry() {
   return (
-    <h1>Hello</h1>
+    <h1>Hello World!</h1>
   );
 }
 
