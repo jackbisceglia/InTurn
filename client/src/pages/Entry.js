@@ -1,4 +1,4 @@
-import '../styles/App.css';
+import '../styles/Entry.css';
 
 function Entry() {
   return (
