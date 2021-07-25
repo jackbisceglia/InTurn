@@ -1,5 +1,10 @@
 ﻿# InTurn
-Looking for places to intern with? Our project tracks the widely used Pitt CSC Summer Internship Repository and notifies our subscribers when a new posting is added. You'll always be ready to apply!
+**Looking for places to intern with? Our project tracks the widely used Pitt CSC Summer Internship Repository and notifies our subscribers when a new posting is added. You'll always be ready to apply!**
+
+Web App              |  Sample Email
+:-------------------:|:-------------------------:
+![](https://i.imgur.com/cNiqNOp.png)|![](https://i.imgur.com/GVAYh6I.png)
+
 
 ## Description
 InTurn is a flask web application that was designed to monitor and notify its users of new additions to the list of internships found on the Pitt CSC Summer Internships GitHub repository. The app periodically checks the repository for updates to the list of internships, and it will send an email to a list of subscribers if any changes to the list are made. To store information about the subscriber list and the list of internships, the app utilizes a PostgreSQL database hosted on SupaBase, and all monitoring is done through a custom python script. 
