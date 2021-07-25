@@ -12,7 +12,7 @@ class GithubScraper:
     # Constructor to initialize the Github object with a target user and repo
     def __init__(self, user, repo):
         # May need another form of authentication
-        self.g = Github('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')
+        self.g = Github(GITHUB_API_KEY)
         self.user = self.g.get_user(user)
         self.repo = self.user.get_repo(repo)
     
@@ -109,7 +109,7 @@ def sendEmailAPI(mailingList: list[str], subject: str, message: str) -> None:
     mail.add_content(Content('text/plain', message))
 
     # Send
-    sg = SendGridAPIClient('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')
+    sg = SendGridAPIClient(TWILIO_API_KEY)
     response = sg.client.mail.send.post(request_body=mail.get())
 
 def parseNotes(htmlText):
