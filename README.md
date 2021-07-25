@@ -1,4 +1,4 @@
-﻿# apptracker
+﻿# InTurn
 small description (& maybe logo)
 
 ## Description
