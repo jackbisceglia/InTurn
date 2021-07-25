@@ -1,0 +1,80 @@
+.wrapper {
+    max-width: 60rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+a {
+    color: #65FFDB;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
+    line-height: 2;
+    font-size: 1.08rem;
+}
+
+.header-wrapper {
+    margin-top: 2.5rem;
+} 
+
+.header-wrapper, .dual-container {
+    margin-bottom: 2.5rem;
+}
+
+.header-title {
+    color: #eee;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.dual-title {
+    color: #eee;
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.input {
+    background-color: #1B3152;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #eee;
+    font-size: 20px;
+    padding: 5px 20px;
+    height: 50px;
+    width: 100%;
+}
+
+.submit {
+    background-color: #65FFDB;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #021128;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: #56dabb;
+}
+
+.headmsg-container {
+    display: flex;
+}
+
+#form-header {
+    margin-right: 15px;
+}
+
+#status-msg {
+    font-size: 1rem;
+    align-self: center;
+}
