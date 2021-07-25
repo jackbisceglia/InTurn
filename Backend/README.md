@@ -1,13 +1,36 @@
-﻿# apptracker
-small description (& maybe logo)
+﻿## App Tracker Backend REST API
+Our RESTful service for handling user subscriptions on our tracker
 
-## Description
-Backend REST API created using Spring Boot.
+## Usage
+The Spring Boot based REST API allows for necessary database interactions in our app. It provides CRUD functionality for our user base, as well as for our internship postings tracking
+
+## Technologies
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- Java 8
+- PostgreSQL
+- [Google Cloud Platform](https://cloud.google.com/gcp)
+  - [App Engine](https://cloud.google.com/appengine)
+
+## Installation
+1. Clone the repository: `git clone *repo url*`
+2. Navigate into backend: `cd Backend`
+3. Initialize dependencies with Maven (build with Maven)
+4. Boot dev server: (run Backend\backend-mlh\src\main\java\com\backendmlh\BackendMlhApplication.java)
 
 ## Endpoints
-- /addUser: A POST request which takes in an email address as a string and stores it in the database. Returns "SUCCESS" or "ERROR" based on status of request.
-- /getUsers: A GET request which returns the users and all their relevant data. Returns data as a JSON.
-- /deleteUser: A DELETE request which deletes the user with the specified email address passed as a string. Returns "SUCCESS" or "ERROR" based on status of request.
-- /addMRP: A POST request which takes in a company, link, role, and location and stores them in the database. Returns "SUCCESS" or "ERROR" based on status of request.
-- /getMRP: A GET request which returns the MRP and all its relevant data. Returns data as a JSON.
-- /deleteMRP: A DELETE request which deletes the most recent posting. Returns "SUCCESS" or "ERROR" based on status of request.
+### User Related
+- Insert new user: `POST /addUser`
+  - Takes in JSON Payload with a single property, `email_address`, and inserts into our database
+  - Returns "SUCCESS" or "ERROR" accordingly
+- Get all users: `GET /getUsers`
+  - Returns JSON with all subscribed users
+- Delete a user: `DELETE /deleteUser`
+  - Deletes the user by specified email address, passed as JSON Payload
+  - Returns "SUCCESS" or "ERROR" accordingly
+
+### Intern Posting Related
+- Insert Most Recent Posting: `POST /addMRP`
+  - Takes in JSON Payload with properties, `company, link, role, location`, and inserts into database
+  - Returns "SUCCESS" or "ERROR" accordingly
+- Get Most Recent Posting: `GET /getMRP`
+  - Returns JSON with all subscribed users
