@@ -4,3 +4,4 @@ lxml==4.6.3
 PyGithub==1.55
 requests==2.25.1
 sendgrid==6.7.1
+Flask==2.0.1
