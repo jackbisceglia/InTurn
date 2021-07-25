@@ -6,6 +6,7 @@ function Signup() {
     const [emailInput, setEmailInput] = useState('');
     const [message, setMessage] = useState('');
     const [showMessage, setShowMessage] = useState(false);
+    const [allowClick, setAllowClick] = useState(true);
 
     // TODO: Cleanup
     function submitHandler(e) {
@@ -18,6 +19,7 @@ function Signup() {
         }
         let postUrl = BASE_URL + '/addUser'
         let formData = { email_address: emailInput };
+        setAllowClick(false)
         fetch(postUrl, {
             method: 'POST',
             headers: {
@@ -34,7 +36,8 @@ function Signup() {
                 setMessage('Error, Try Again Later');
             }
             setShowMessage(true);
-            setTimeout(() => { setShowMessage(false); setMessage('') }, 4000);
+            setAllowClick(true)
+            setTimeout(() => { setShowMessage(false); setMessage(''); setShowMessage(!showMessage)}, 4000);
             setEmailInput('');
         });
     }
@@ -50,7 +53,7 @@ function Signup() {
                     <input value={emailInput} id="email" className="input" type="email" placeholder="Email"
                         onChange={(e) => setEmailInput(e.target.value)} />
                 </div>
-                <button type="text" className="submit">Sign Up</button>
+                <button disabled={!allowClick} style={!allowClick ? {backgroundColor: 'grey'} : {}} type="text" className="submit">Sign Up</button>
             </form>
         </div>
     );
