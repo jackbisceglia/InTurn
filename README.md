@@ -1,8 +1,8 @@
 ﻿# InTurn
-small description (& maybe logo)
+Looking for places to intern with? Our project tracks the widely used Pitt CSC Summer Internship Repository and notifies our subscribers when a new posting is added. You'll always be ready to apply!
 
 ## Description
-- _basic project description_
+InTurn is a flask web application that was designed to monitor and notify its users of new additions to the list of internships found on the Pitt CSC Summer Internships GitHub repository. The app periodically checks the repository for updates to the list of internships, and it will send an email to a list of subscribers if any changes to the list are made. To store information about the subscriber list and the list of internships, the app utilizes a PostgreSQL database hosted on SupaBase, and all monitoring is done through a custom python script. 
 
 ## Tech Stack
 - Frontend Web app in React with create-react-app
@@ -11,13 +11,16 @@ small description (& maybe logo)
 - Webhook/monitoring with Python
 
 ## MVP
-- _description of what the first iteration of the project should look like_ 
+- A frontend client that will allow users to sign up for and receive emails about changes to the Pitt CSC Summer Internship repository
+- A basic flask web app that invokes a python script responsible for parsing the information from the repository for changes and notifying users of potential changes
 
 ## Plans for the future
-- _list of future plans_
+- Create a dashboard for past internships applied to 
+- More robust python script for checking for changes to the list (removals, position changes, etc.)
+- Company preferences: Only receive notifications if a certain company posts offerings
 
 ## Team Members
-- Jack Bisceglia -> _links_
-- Sid Raju ->  _links_
-- Joe Petrillo ->  _links_
-- Eric Wu ->  _links_
+- [Jack Bisceglia](https://github.com/jackbisceglia)
+- [Sid Raju](https://github.com/sid2033)
+- [Joe Petrillo](https://github.com/joepetrillo)
+- [Eric Wu](https://github.com/ewu2023)
