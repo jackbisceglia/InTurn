@@ -1,0 +1,6 @@
+beautifulsoup4==4.9.3
+bs4==0.0.1
+lxml==4.6.3
+PyGithub==1.55
+requests==2.25.1
+sendgrid==6.7.1

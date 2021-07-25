@@ -243,5 +243,4 @@ def sanitizeCompany(company):
     capitalized = [i.capitalize() for i in result]
     return " ".join(capitalized)
 
-
 main()
