@@ -1,8 +1,16 @@
 import '../styles/Entry.css';
 
+import Header from '../components/Header';
+import About from '../components/About';
+import Signup from '../components/Signup';
+
 function Entry() {
   return (
-    <h1>Hello World!</h1>
+    <div className="wrapper">
+      <Header />
+      <About />
+      <Signup />
+    </div>
   );
 }
 
