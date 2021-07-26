@@ -1,6 +1,6 @@
-﻿# InTurn
+﻿# InTurn: [*Live*](https://theinturn.tech/)
 **Looking for places to intern with? Our project tracks the widely used Pitt CSC Summer Internship Repository and notifies our subscribers when a new posting is added. You'll always be ready to apply!**
-[Live Here](https://theinturn.tech/)
+
 
 Web App              |  Sample Email
 :-------------------:|:-------------------------:
