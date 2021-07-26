@@ -7,13 +7,13 @@ Web App              |  Sample Email
 
 
 ## Description
-InTurn is a flask web application that was designed to monitor and notify its users of new additions to the list of internships found on the Pitt CSC Summer Internships GitHub repository. The app periodically checks the repository for updates to the list of internships, and it will send an email to a list of subscribers if any changes to the list are made. To store information about the subscriber list and the list of internships, the app utilizes a PostgreSQL database hosted on SupaBase, and all monitoring is done through a custom python script. 
+InTurn is a Full Stack application that was designed to monitor and notify its users of new additions to the list of internships found on the Pitt CSC Summer Internships GitHub repository. The app periodically checks the repository for updates to the list of internships, and it will send an email to a list of subscribers if any changes to the list are made. To store information about the subscriber list and the list of internships, the app utilizes a PostgreSQL database hosted on SupaBase, and all monitoring is done through a custom python script. 
 
 ## Tech Stack
 - Frontend Web app in React with create-react-app
 - Backend REST API in Java and Spring Boot
 - Database using PostgreSQL hosted on SupaBase
-- Webhook/monitoring with Python
+- Webhook/monitoring with Python and Flask
 
 ## MVP
 - A frontend client that will allow users to sign up for and receive emails about changes to the Pitt CSC Summer Internship repository
