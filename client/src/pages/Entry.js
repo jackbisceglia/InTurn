@@ -6,11 +6,13 @@ import Signup from '../components/Signup';
 
 function Entry() {
   return (
-    <div className="wrapper">
-      <Header />
-      <About />
-      <Signup />
-    </div>
+    <>
+      <div className="wrapper">
+        <Header />
+        <About />
+        <Signup />
+      </div>
+    </>
   );
 }
 

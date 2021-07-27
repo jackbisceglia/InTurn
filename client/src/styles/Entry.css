@@ -19,6 +19,17 @@ p {
     margin-top: 2.5rem;
 } 
 
+
+
+.head {
+    display: flex;
+}
+
+.icon {
+    width: 2.5rem;
+    margin-right: 0.75rem;
+}
+
 .header-wrapper, .dual-container {
     margin-bottom: 2.5rem;
 }
