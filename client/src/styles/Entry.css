@@ -19,6 +19,11 @@ p {
     margin-top: 2.5rem;
 } 
 
+.tiny {
+    font-size: 0.65rem;
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}
 
 
 .head {

@@ -1,19 +1,31 @@
-import '../styles/Entry.css';
+import { useState, useEffect } from 'react';
+import Home from './Home'
+import Unsubscribe from './Unsubscribe'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
 
-import Header from '../components/Header';
-import About from '../components/About';
-import Signup from '../components/Signup';
 
-function Entry() {
-  return (
-    <>
-      <div className="wrapper">
-        <Header />
-        <About />
-        <Signup />
-      </div>
-    </>
-  );
+// Root Level Routing
+export default function Entry() {
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        setLoading(prevState => !prevState)
+    }, [])
+
+    return loading ? <h1>Loading... </h1> : <Routing/>
 }
 
-export default Entry;
+function Routing() {
+    return (
+        <Router>
+            <Switch >
+                <Route path="/unsubscribe/:userIdentifier"><Unsubscribe /></Route>
+                <Route path="/" ><Home /></Route>
+            </Switch>
+        </Router>
+    )
+}

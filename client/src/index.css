@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  height: 100vh;
   background-color: #021128;
   color: #C3CDEB;
   font-family: Arial;
@@ -11,13 +13,12 @@ body {
 
 }
 
+#root {
+  height: 100%;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.tiny {
-  font-size: 0.1rem;
-  align-self: flex-end;
-  justify-self: flex-end;
 }
